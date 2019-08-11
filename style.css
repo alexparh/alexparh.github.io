@@ -1,100 +1,66 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #333;
+::selection {
+    color: white;
+    background: dimgrey;
 }
 
-span {
-    font-size: 14px;
-    color: #000;
-    transition: 0.3s;
+div.content {
+    margin: 10% 20%;
 }
 
-img {
-    width: 150px;
-    border-radius: 75px;
-    margin: 10px 15px 0 0;
+div.personal {
+    margin: 10%;
+    align-content: center;
 }
 
-table {
-    margin: 0;
-    float: right;
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center;
+    line-height: 150%;
 }
-
-    table tr td:first-child {
-        padding-right: 5px;
-    }
 
 a {
     text-decoration: none;
-    color: #000;
     font-weight: bold;
-    transition: 0.3s;
+    color: black;
+    transition: 0.5s;
 }
+
+    a:visited {
+        text-decoration: none;
+        color:black;
+    }
 
     a:hover {
-        color: #1A6DBB;
-        transition: 0.3s;
+        color: gray;
+        transition: 0.5s;
     }
 
-::-moz-selection {
-    color: white;
-    background: #1A6DBB;
-}
-
-::selection {
-    color: white;
-    background: #1A6DBB;
-}
-
-.content {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.intro {
-    margin: 150px 0 90px 0;
-    text-align: center;
-}
-
-    .intro span {
-        margin-bottom: 10px;
-        font-size: 22px;
-        line-height: 40px;
+    a.cv:hover {
+        text-decoration: underline;
     }
 
-        .intro span.highlight {
-            background-color: #333;
-            color: white;
-        }
-
-        .intro span.highlight-red {
-            background-color: darkred;
-            color: white;
-            transition: 0.3s;
-        }
-
-            .intro span.highlight-red:hover {
-                background-color: red;
-                color: white;
-                transition: 0.3s;
-            }
-
-@media (max-width: 360px) {
-    .intro {
-        margin: 50px 0 50px 0;
-    }
-
-        .intro span {
-            font-size: 18px;
-            line-height: 28px;
-        }
-
-    img {
-        display: none;
-    }
-
-    table {
-        float: none;
-    }
+img {
+    width: 130px;
+    border-radius: 65px;
+    margin: 0 30px 0 0;
 }
+
+table {
+    margin: auto;
+    border-spacing: 10px 0;
+}
+
+span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+    span.table2column {
+        font-size: 19px;
+        font-weight: 600;
+    }
+
+    span.table3column {
+        font-size: 17px;
+        font-weight: 500;
+    }
